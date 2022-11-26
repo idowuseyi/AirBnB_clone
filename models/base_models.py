@@ -5,11 +5,27 @@ The class BaseModel.
 from uuid import uuid4
 from datetime import datetime
 class BaseModel:
-  def __init__(self):
-    self.id = str(uuid4())
-    self.created_at = datetime.now()
-    self.updated_at = datetime.now()
-
+  
+  def __init__(self, *args, **kwargs):
+    if args:
+      """ *args should not be used """
+      pass
+    if len(kwargs) == 0:
+      """ If not kwargs or if kwargs is None """
+      self.id = str(uuid4())
+      self.created_at = datetime.now()
+      self.updated_at = datetime.now()
+      
+    if kwargs is not None:
+      """ If kwargs is not None """
+      for key in kwargs.keys():
+        if key == '__class__':
+          continue
+        else:
+          if key == "updated_at" or key == "created_at":
+            kwargs[key] = datetime.strptime(kwargs[key], "%Y-%m-%dT%H:%M:%S.%f")
+          setattr(self, key, kwargs[key])
+  
   def __str__(self):
     return ("[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__))
     
@@ -29,6 +45,3 @@ class BaseModel:
     dic['__class__'] = self.__class__.__name__
     return dic
 
-"""
-self.__dict__ = {id : 83242, created_at : 2012 141 125, updated_at : 372923, name : 'vince', my_number : '45'}
-"""
