@@ -1,6 +1,7 @@
 # 0x00. AirBnB clone - The console
 Author By:
-# oluwaseyi Idowu and Idriss Ibrahim Dodo
+# oluwaseyi Idowu
+#Idriss Ibrahim Dodo
 
 ## Python   OOP
 
