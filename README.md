@@ -3,7 +3,7 @@ Author By:
 # oluwaseyi Idowu
 #Idriss Ibrahim Dodo
 
-## Python   OOP
+## Python OOP
 
 ## AIRBNB Clone Project
 
