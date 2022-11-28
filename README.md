@@ -1,8 +1,39 @@
 # 0x00. AirBnB clone - The console
 Author By:
 # oluwaseyi Idowu and Idriss Ibrahim Dodo
+
 ## Python   OOP
 
+## AIRBNB Clone Project
+
+## Description
+The AirBnb Clone is the ultimate project in ALX SE programme, its in phases with each phase building upon the previous untill a complete and sophisticated WebApp is build.
+
+First phase of the project is a Python console
+Console
+This is the entry point of this phase of the project. Its an interpreter build on top of the python cmd module to provide an interactive experience with the project
+
+### How to Start the console
+python3 console.py
+./console.py
+### How to Stop the console
+(hbnb) quit
+### How to use
+Type help to see the list of commands and how to use them.
+
+### Examples
+(hbnb) help
+(hbnb) all
+(hbnb) all User
+(hbnb) create City
+Models
+User
+Place
+Thank you!
+
+#
+
+## THEORY
 ### Concepts
 For this project, we expect you to look at these concepts:
 
@@ -51,7 +82,7 @@ Python test cheatsheet
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-General
+## General
 How to create a Python package
 How to create a command interpreter in Python using the cmd module
 What is Unit testing and how to implement it in a large project
